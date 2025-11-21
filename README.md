@@ -2,7 +2,7 @@
 
 A sleek, modern, and functional To-Do List application built with Flutter and Dart. This app allows users to easily track, add, and manage their daily tasks with a clean and intuitive user interface.
 
-## ✨ Features
+##  Features
 
 * **Task Management:** Add new tasks easily via a dedicated input field.
 * **Completion Tracking:** Mark tasks as complete using the checkbox.
@@ -118,6 +118,7 @@ You need to have the Flutter SDK installed and configured on your system.
 ## 📁 Project Structure
 The core functionality is contained within a single file for simplicity:
 
-output:
+### output:
+
 <img width="927" height="719" alt="image" src="https://github.com/user-attachments/assets/2f23aee3-2854-41a2-a46d-532053dbbda1" />
 
