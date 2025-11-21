@@ -32,9 +32,9 @@ class TaskManagerScreen extends StatefulWidget {
   State<TaskManagerScreen> createState() => _TaskManagerScreenState();
 }
 
-// 4. State Class: Contains the mutable data and the build logic
+
 class _TaskManagerScreenState extends State<TaskManagerScreen> {
-  // The mutable list of tasks (the 'state' we manage)
+ 
   final List<String> _tasks = [];
 
   // Controller for the text input field
@@ -44,16 +44,16 @@ class _TaskManagerScreenState extends State<TaskManagerScreen> {
   void _addTask() {
     // Check if the input field is not empty
     if (_taskController.text.isNotEmpty) {
-      // setState tells Flutter to rebuild the widget
+     
       setState(() {
         _tasks.add(_taskController.text);
       });
-      // Clear the text field after adding the task
+     
       _taskController.clear();
     }
   }
 
-  // Function to delete a task at a specific index
+
   void _deleteTask(int index) {
     setState(() {
       _tasks.removeAt(index);
