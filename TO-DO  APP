@@ -1,3 +1,7 @@
+// DESCRIPTION: The single-file entry point for the To-Do List web application.
+// It includes all HTML structure, Tailwind CSS for styling, JavaScript logic,
+// and Firebase/Firestore integration.
+
 import 'package:flutter/material.dart';
 
 // 1. Main entry point: Runs the ToDoApp widget
