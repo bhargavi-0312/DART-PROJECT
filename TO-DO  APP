@@ -62,7 +62,7 @@ class _TaskManagerScreenState extends State<TaskManagerScreen> {
 
   @override
   void dispose() {
-    // Clean up the controller when the widget is removed from the tree
+ 
     _taskController.dispose();
     super.dispose();
   }
@@ -108,9 +108,9 @@ class _TaskManagerScreenState extends State<TaskManagerScreen> {
             ),
           ),
 
-          // Task List (scrollable)
+       
           Expanded(
-            // ListView.builder is efficient for long lists
+           
             child: ListView.builder(
               itemCount: _tasks.length,
               itemBuilder: (context, index) {
@@ -122,17 +122,17 @@ class _TaskManagerScreenState extends State<TaskManagerScreen> {
                     horizontal: 16,
                   ),
                   child: ListTile(
-                    // Display the task text
+                    
                     title: Text(
                       _tasks[index],
                       style: const TextStyle(fontSize: 18),
                     ),
-                    // Action button to delete the task
+                   
                     trailing: IconButton(
                       icon: const Icon(Icons.delete, color: Colors.redAccent),
                       onPressed: () => _deleteTask(index),
                     ),
-                    // Optional: Add an icon to signify it's a list item
+                   
                     leading: const Icon(
                       Icons.check_box_outline_blank,
                       color: Colors.blueGrey,
